@@ -1,144 +1,300 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceylon Journey</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- HEADER START -->
-<header>
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
         <div class="container">
-            <img src="img/Logo.jpg" alt="logo" width="75px" height="50px">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html">Tour</a></li>
+            <a class="navbar-brand fw-bold logo" href="index.html">
+                <a class="navbar-brand fw-bold logo" href="index.html"><img src="img/Logo.jpg" alt="logo" width="75px" height="55px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mainNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html">Tours</a></li>
                     <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicle Hire</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <div class="container-fluid bg-body-secondary" style="margin-bottom: 5%;">
-        <div class="main-background-image">
-            <div class="p-5 text-center">
-                <div class="container py-5">
-                    <h1 class="header-name"><b>Welcome to Ceylon Journey</b></h1>
-                    <p class="hero-section-p">Your Gateway to Exceptional Vacations</p>
+    <!-- HERO -->
+    <header class="hero text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 heading">Ceylon Journey</h1>
+            <p class="lead subtitle">Your Gateway to Unforgettable Sri Lankan Experiences</p>
+            <a href="#tours" class="btn btn-outline-dark btn-lg mt-3">Learn More</a>
+        </div>
+    </header>
+
+    <!-- VIDEO SECTION -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="video/travel-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+
+    <!-- WHY / SRI LANKA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row gx-5 align-items-start">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">We Travel with Us</h3>
+
+                    <div class="row gy-3">
+                        <div class="col-sm-6">
+                            <div class="feature-card p-3 d-flex gap-3 align-items-start">
+                                <div class="icon-placeholder"><img src="img/customer.png" class="img-fluid" alt=""></div>
+                                <div>
+                                    <h6 class="mb-1">Best Customer Service</h6>
+                                    <small class="text-muted">Friendly & knowledgeable guides.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="feature-card p-3 d-flex gap-3 align-items-start">
+                                <div class="icon-placeholder"><img src="img/verity.jpg" class="img-fluid" alt=""></div>
+                                <div>
+                                    <h6 class="mb-1">Variety of Services</h6>
+                                    <small class="text-muted">Tours, transport & custom itineraries.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="feature-card p-3 d-flex gap-3 align-items-start">
+                                <div class="icon-placeholder"><img src="img/schedual.png" class="img-fluid" alt=""></div>
+                                <div>
+                                    <h6 class="mb-1">Schedule Your Visit</h6>
+                                    <small class="text-muted">Flexible dates and durations.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="feature-card p-3 d-flex gap-3 align-items-start">
+                                <div class="icon-placeholder"><img src="img/ex.jpg" class="img-fluid" alt=""></div>
+                                <div>
+                                    <h6 class="mb-1">Experienced Guides</h6>
+                                    <small class="text-muted">Local experts with passion.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h3 class="mb-3">Sri Lanka</h3>
+                    <p class="text-muted">Sri Lanka is a tropical island with abundant nature, rich culture, beautiful
+                        beaches, tea plantations and wildlife. Explore cultural sites, scenic climbs and enjoy local
+                        cuisine.</p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <div class="thumb-placeholder"><img src="img/kandy.jpeg" class="img-fluid" alt=""></div>
+                        <div class="thumb-placeholder"><img src="img/eliphant.jpeg" class="img-fluid" alt=""></div>
+                        <div class="thumb-placeholder"><img src="img/sigiriya.jpg" class="img-fluid" alt=""></div>
+                        <div class="thumb-placeholder"><img src="img/beach.jpg" class="img-fluid" alt=""></div>
+                        <div class="thumb-placeholder"><img src="img/north central p.jpg" class="img-fluid" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & EXPERIENCES -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-md-6">
+                    <h4>Our Services</h4>
+                    <div class="row gy-3 mt-3">
+                        <div class="col-6">
+                            <div class="service-card p-4 text-center">
+                                <div class="service-img">
+                                    <img src="img/guide service new.jpg" class="img-fluid" alt="">
+                                </div>
+                                <h6 class="mt-3">Guide Services</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="service-card p-4 text-center">
+                                <div class="service-img">
+                                    <img src="img/guide22 new.jpg" class="img-fluid" alt="">
+                                </div>
+                                <h6 class="mt-3">Transport</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h4>Experiences</h4>
+                    <div class="row gy-3 mt-3">
+                        <div class="col-6">
+                            <div class="experience-card p-4">
+                                <img src="img/tour_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="experience-card p-4">
+                                <img src="img/caption nw.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="py-5">
+        <div class="container">
+            <h4>Reviews</h4>
+            <div class="review-card p-4 mt-3">
+                <div class="d-flex align-items-start gap-3">
+                    <div class="avatar-placeholder"><img src="img/review.jpg" class="img-fluid" alt=""></div>
+                    <div>
+                        <h6 class="mb-1">Ada Most</h6>
+                        <p class="small text-muted mb-2">Verified traveller</p>
+                        <p class="mb-0 text-muted">"Amazing experience — well organised and the guides were exceptional.
+                            A trip to remember!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card p-4 mt-3">
+                <div class="d-flex align-items-start gap-3">
+                    <div class="avatar-placeholder"><img src="img/hhh.jpeg" class="img-fluid" alt=""></div>
+                    <div>
+                        <h6 class="mb-1">Junny Mariya</h6>
+                        <p class="small text-muted mb-2">Verified traveller</p>
+                        <p class="mb-0 text-muted">"We traveled with a group of 5 friends around Sri Lanka for a week. Transport was arranged through Sri Lanka Travel and Tourism."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SHORT -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h4>About Us</h4>
+            <p class="text-muted mt-3">Ceylon Journey is a dedicated travel agency in Sri Lanka offering handcrafted
+                tours, guide services, transportation and local experiences. Our mission is to make your travel simple,
+                safe and memorable.</p>
+        </div>
+    </section>
+
+    <!-- TOURS & VEHICLE HIRE GRID -->
+    <section id="tours" class="py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-md-6">
+                    <h5>Tours</h5>
+                    <div class="row gy-3 mt-3">
+                        <div class="col-6">
+                            <img src="img/Special Interest Tours.jpg" class="img-fluid" alt="">
+                            <div class="tile">Special Packages</div>
+                        </div>
+                        <div class="col-6">
+                            <img src="img/culture tour.jpg" class="img-fluid" alt="">
+                            <div class="tile">Cultural Tour</div>
+                        </div>
+                        <div class="col-6">
+                            <img src="img/bike.jpg" class="img-fluid" alt="">
+                            <div class="tile">Bikes / Bicycles</div>
+                        </div>
+                        <div class="col-6">
+                            <img src="img/ayuwedia.jpg" class="img-fluid" alt="">
+                            <div class="tile">Ayurveda & Wellness</div>
+                        </div>
+                        <div class="col-md-6">
+                    <a class="btn btn-dark" href="tour.html">More Details</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mt-4 mt-md-0">
+            <h5>Vehicle Hire</h5>
+            <div class="row gy-3 mt-3">
+                <div class="col-6">
+                    <img src="img/van13.jpg" class="img-fluid" alt="">
+                    <div class="tile">Van</div>
+                </div>
+                <div class="col-6">
+                    <img src="img/train2.jpeg" class="img-fluid" alt="">
+                    <div class="tile">Train Tickets</div>
+                </div>
+                <div class="col-6">
+                    <img src="img/bike any ed.jpg" class="img-fluid" alt="">
+                    <div class="tile">Bikes</div>
+                </div>
+                <div class="col-6">
+                    <img src="img/tuk-tuk-private-safari-tour-exploring-sri-lankas-capital-colombo-d4619-336215P1-3.jpg" class="img-fluid" alt="">
+                    <div class="tile">Wheels</div>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-dark" href="vehicle.html">More Details</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- VIDEO SECTION -->
-    <div class="video-section">
-        <video autoplay muted loop playsinline class="w-100">
-            <source src="video/travel-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</header>
-<!-- HEADER END -->
-
-
-<!-- MAIN CONTENT -->
-<main>
-    <div class="main-body">
-        <h6 class="main-body-h6">Incredible Sri Lanka Experiences</h6>
-        <h2 class="main-body-h2">Ceylon Journey</h2>
-        <p class="main-body-p">Welcome to Ceylon Journey! As a leading travel agent in Sri Lanka, we strive to offer you the most memorable travel experience on the island with access to the best hotels,
-
-top tourist attractions, and adventurous activities. We invite travellers from all across the globe to a haven of complete rest, relaxation and exotic encounters!</p></div>
-
-<div class="main-button-01">
-    <button class="button-001">INQUIRE NOW</button>
 </div>
-<br>
+</section>
 
-<div class="main-p2">
-    <div>
-    <h5 class="main-p2-main">Why Travel with Us?</h5>
-    <h6 class="main-p2-main-2"><b>Trusted Industry Experts</b></h6>
-    <h6 class="main-p2-main-3">Operating for over 40 years in the industry, <br> we are well-recognised travel <br> agents.</h6>
-</div>
-</main>
-
-
-<!-- FOOTER -->
-<footer class="container py-5">
-    <div class="footer-backgraound">
-    <div class="row">
-
-        <div class="col-12 col-md">
-            <img src="img/Logo.jpg" width="100px" height="75px">
+    <!-- CONTACT SHORT -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h5>Contact Us</h5>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <p class="text-muted">Have a question or want to book a tour? Reach out and we'll reply shortly.</p>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-dark" href="contact.html">Contact Form</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="col-6 col-md">
-            <h5>Navigation</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Vehicle Hire</a></li>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container d-md-flex justify-content-between align-items-center">
+            <div>&copy; <span id="year"></span> Ceylon Journey</div>
+            <div class="mt-2 mt-md-0">
+                <a class="text-white me-3 small" href="about.html">About</a>
+                <a class="text-white me-3 small" href="contact.html">Contact</a>
+                <a class="text-white small" href="#">Privacy</a>
+            </div>
         </div>
+    </footer>
 
-        <div class="col-6 col-md">
-            <h5>Tours</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Northern Province</a></li>
-                <li><a href="#">Eastern Province</a></li>
-                <li><a href="#">North Western Province</a></li>
-                <li><a href="#">North Central Province</a></li>
-                <li><a href="#">Sabaragamuwa Province</a></li>
-                <li><a href="#">Central Province</a></li>
-            </ul>
-        </div>
+    <script>
+        // set year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
-        <div class="col-6 col-md">
-            <h5>More Tours</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Ayurveda & Wellness</a></li>
-                <li><a href="#">Uva Province</a></li>
-                <li><a href="#">Southern Province</a></li>
-                <li><a href="#">Cultural Tours</a></li>
-                <li><a href="#">Western Province</a></li>
-            </ul>
-        </div>
-
-        <div class="col-6 col-md">
-            <h5>Contact</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="mailto:ceylonjourney@gmail.com">+94 8798768 78</a></li>
-                <li><a href="mailto:ceylonjourney@gmail.com"><u>ceylonjourney@gmail.com</u></a></li>
-                <li><a href="mailto:ceylonjourney@gmail.com">No. 0972/32, Colombo Road, Galle.</a></li>
-            </ul>
-        </div>
-
-        <div class="col-12 mt-3">
-            <p>2025 Ceylon Journey (Pvt) LTD Sri Lanka (Reg: PV789078) &nbsp;
-               Civil Aviation License No: C-123 &nbsp; Tourist Board License No: Th/RA/99387</p>
-        </div>
-    </div>
-</div>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

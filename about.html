@@ -1,114 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <!--NAVIGATION-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-        <div class="container">
-            
-            <img src="img/Logo.jpg" alt="logo" width="75px" height="50px">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicle Hire</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid bg-body-secondary" style="margin-bottom: 5%;">
-        <div class="main-background-image-02">
-            <div class="p-5 text-center">
-                <div class="container py-5">
-                </div>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold logo" href="index.html"><img src="img/Logo.jpg" alt="logo" width="75px" height="55px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav2" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicle Hire</a></li>
+        </ul>
+      </div>
     </div>
-</header>
-    <div class="About-main">
-        <h1 class="About-main-h1">About</h1>
-        <p class="About-main-p">At Ceylon Journey, it’s our fundamental belief that each and every one of our guests should have a trip of a lifetime! As a premier
-among inbound tour operators in Sri Lanka, we strive to offer travel experiences which are enriching, special and hassle-free.
-Our packages were designed with a highly personalized touch to reflect the wonder of this magical island, showcasing its rich and
-diverse heritage, culture, arts, tropical vistas and delicious cuisines.Our aim is to offer great comfort, an outstanding level of service
-and devote extra attention to details with the expertise of our multilingual team to make your holiday an unforgettable experience.
-As we take care of all your transfers, hotel reservations and more thus ensuring a smooth journey!
-We consider ourselves extremely fortunate to play the role of a well -connected friend, linking our guests from around the globe with
-fantastic guides, naturalists, artisans, restaurateurs and hoteliers and many others who have much to offer international visitors.
-Ceylon Journey sprang out of a desire to create a dedicated home for journeys crafted in the spirit of unbounded adventure and travel!
-To that end, we warmly invite you to join us to explore and discover a destination unlike any other in better and more immersive ways,
-making this the year you enjoy a handcrafted trip of a lifetime.</p>
+  </nav>
+
+  <header class="py-5 text-center" style="background:#fafafa;">
+    <div class="container">
+      <h1 class="display-5 fw-bold">About Ceylon Journey</h1>
+      <p class="text-muted">We design authentic Sri Lankan trips — cultural tours, wildlife escapes, beach holidays and more.</p>
     </div>
-   <!-- FOOTER -->
-<footer class="container py-5">
-    <div class="footer-backgraound">
-    <div class="row">
+  </header>
 
-        <div class="col-12 col-md">
-            <img src="img/Logo.jpg" width="100px" height="75px">
+  <main class="py-5">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-lg-6">
+          <img src="/mnt/data/Ceylon Journey Website Screenshot.png" alt="Ceylon Journey" class="img-fluid rounded shadow-sm">
         </div>
+        <div class="col-lg-6">
+          <h4>Who we are</h4>
+          <p class="text-muted">Ceylon Journey is an independent travel company based in Sri Lanka. We specialise in tailor-made itineraries and small group tours — focusing on local culture, wildlife and sustainable travel experiences.</p>
 
-        <div class="col-6 col-md">
-            <h5>Navigation</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Vehicle Hire</a></li>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
+          <h5 class="mt-4">Our approach</h5>
+          <ul class="text-muted">
+            <li>Local knowledge & expert guides</li>
+            <li>Flexible, personalised itineraries</li>
+            <li>Small groups for better experiences</li>
+          </ul>
 
-        <div class="col-6 col-md">
-            <h5>Tours</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Northern Province</a></li>
-                <li><a href="#">Eastern Province</a></li>
-                <li><a href="#">North Western Province</a></li>
-                <li><a href="#">North Central Province</a></li>
-                <li><a href="#">Sabaragamuwa Province</a></li>
-                <li><a href="#">Central Province</a></li>
-            </ul>
+          <a href="contact.html" class="btn btn-dark mt-3">Get in touch</a>
         </div>
-
-        <div class="col-6 col-md">
-            <h5>More Tours</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="#">Ayurveda & Wellness</a></li>
-                <li><a href="#">Uva Province</a></li>
-                <li><a href="#">Southern Province</a></li>
-                <li><a href="#">Cultural Tours</a></li>
-                <li><a href="#">Western Province</a></li>
-            </ul>
-        </div>
-
-        <div class="col-6 col-md">
-            <h5>Contact</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="mailto:ceylonjourney@gmail.com">+94 8798768 78</a></li>
-                <li><a href="mailto:ceylonjourney@gmail.com"><u>ceylonjourney@gmail.com</u></a></li>
-                <li><a href="mailto:ceylonjourney@gmail.com">No. 0972/32, Colombo Road, Galle.</a></li>
-            </ul>
-        </div>
-
-        <div class="col-12 mt-3">
-            <p>2025 Ceylon Journey (Pvt) LTD Sri Lanka (Reg: PV789078) &nbsp;
-               Civil Aviation License No: C-123 &nbsp; Tourist Board License No: Th/RA/99387</p>
-        </div>
+      </div>
     </div>
-</div>
-</footer>
+  </main>
+
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      &copy; <span id="year2"></span> Ceylon Journey — All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
