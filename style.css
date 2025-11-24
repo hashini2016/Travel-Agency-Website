@@ -24,7 +24,47 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.main-body-h2{
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(6, 51, 77);
+    font-style: italic;
+}
+.main-body-h6{
+    font-size: xx-small;
+    text-align: center;
+    color: rgb(23, 41, 94);
+}
+.main-body-p{
+    text-align: center;
+    color: #32446f;
+    font-size: smaller;
+}
+.main-button-01{
+    text-align: center;
+}
+.button-001{
+    background-color: #1f3b7c;
+    color: rgb(250, 251, 251);
+    border: #2026cc;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.main-p2-main{
+    text-align: left;
+    color: #2f426c;
+}
+.main-p2{
+    background-color: #2b5c8e;
+}
+.main-p2-main-2{
+    color: rgb(74, 113, 136);
+}
+.main-p2-main-3{
+    color: #f7f7f8;
+    f
+}
 /*About Page*/
 
 .main-background-image-02 {
