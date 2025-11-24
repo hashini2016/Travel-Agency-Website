@@ -1,0 +1,69 @@
+/*Home Page*/
+
+.main-background-image {
+    background-image: url("img/Sri-Lanka.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-name{
+    font-size: medium;
+    font-style: italic;
+    color: rgb(255, 251, 251);
+    text-align: center;
+}
+.hero-section-p{
+    font-size: small;
+    font-style: italic;
+    color: aliceblue;
+    text-align: center;
+}
+.footer-backgraound{
+    background-image: url("img/beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*About Page*/
+
+.main-background-image-02 {
+    background-image: url("img/pic\ 3\ train.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.About-main-h1{
+    color: #32446f;
+}
+.About-main-p{
+    color: #2026cc;
+    text-align: justify;
+}
+
+/*Tour*/
+
+.main-background-image-03 {
+    background-image: url("img/pic1\ main\ home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Vehicle hire*/
+
+.main-background-image-04 {
+    background-image: url("img/vehicle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Contact*/
+
+.main-background-image-05 {
+    background-image: url("img/photo0jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
