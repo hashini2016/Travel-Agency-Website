@@ -45,7 +45,7 @@
             <p>Discover, Explore, and Experience the Beauty of Sri Lanka</p>
         </div>
         <div class="row mx-auto container-fluid">
-            <div onclick="window.location.href='sproduct1.html';"  class="product text-center col-lg-3 col-md-4 col-12">
+            <div onclick="window.location.href='Package.html';"  class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="img/galle.jpeg" alt="" width="500px" height="400px">
                 <div class="star">
                     <i class="fas fa-star"></i>
@@ -317,5 +317,24 @@
         </div>
     </section>
 
+      <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container d-md-flex justify-content-between align-items-center">
+             <a class="navbar-brand fw-bold logo" href="index.html"><img src="img/Logo.jpg" alt="logo" width="75px" height="55px"></a>
+            <div>&copy; <span id="year"></span> Ceylon Journey</div>
+            <div class="mt-2 mt-md-0">
+                <a class="text-white me-3 small" href="about.html">About</a>
+                <a class="text-white me-3 small" href="contact.html">Contact</a>
+                <a class="text-white small" href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // set year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
