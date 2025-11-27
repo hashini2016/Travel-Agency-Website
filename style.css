@@ -1,5 +1,5 @@
 :root{
-  --accent:#306c94;
+  --accent:#153b49;
   --muted:#6c6c6c;
   --soft:#f6f6f6;
   --card-bg:#ffffff;
@@ -107,11 +107,11 @@ body{
   border-radius:6px;
 }
 
-/* Applies to all buttons with the .btn class */
+/* all buttons */
 .btn {
   background-color: #2375a4;  /* blue background */
   color: white;            /* white text */
-  border: none;            /* optional: remove border */
+  border: none;            /* remove border */
 }
 
 /* Keep black on hover/focus/active */
@@ -162,12 +162,10 @@ body{
   vertical-align: middle;
 }
 
-
 /* footer */
 footer{
-    background-color: #2375a4;
-    font-size:0.95rem
-    
+    background-color:#164d6c !important;
+    font-size:0.95rem;
 }
 
 /* Responsiveness tweaks */
@@ -176,4 +174,12 @@ footer{
   .subtitle{padding:0 1rem}
   .thumb-placeholder{width:60px;height:46px}
   .hero{min-height:38vh}
+}
+.product {
+    margin-bottom: 20px;   /* Reduce space bottom of each image */
+    padding: 10px;         /* You can increase or decrease padding */
+}
+
+.product img{
+    border-radius: 10px;   /* Optional – makes corners smooth */
 }
