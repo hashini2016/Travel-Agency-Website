@@ -225,3 +225,81 @@ footer{
   width: 70px;
   border-radius: 6px;
 }
+
+/* ================= CREATIVE IMAGE CARDS ================= */
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.creative-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.creative-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+/* Overlay effect */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.overlay h5 {
+    color: white;
+    font-weight: 600;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+}
+
+/* Hover Effects */
+.creative-card:hover img {
+    transform: scale(1.1);
+}
+
+.creative-card:hover .overlay {
+    opacity: 1;
+}
+
+.creative-card:hover .overlay h5 {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .creative-card img {
+        height: 180px;
+    }
+}
+
